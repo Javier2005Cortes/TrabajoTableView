@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="370.0" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.tableviewclaseinterfaces.HelloController">
+    <padding>
+        <Insets top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="TABLE VIEW" VBox.vgrow="ALWAYS" />
+    <TableView fx:id="Table" onMouseClicked="#handleMouseClicked" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="367.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="Nombre" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="106.0" text="Nombres" />
+            <TableColumn fx:id="Apellido" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="181.0" text="Apellidos" />
+            <TableColumn fx:id="Edad" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="82.0" text="Edad" />
+        </columns>
+    </TableView>
+</VBox>
